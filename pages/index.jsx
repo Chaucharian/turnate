@@ -1,41 +1,40 @@
 import React from "react";
 import { Container } from "@material-ui/core";
-import { Section, Header } from "../src/components";
 import styled from "styled-components";
-import Title from "components/Title";
-import Image from "components/Image";
+import { Section, Title, Subtitle, Image, SvgArrow } from "src/components";
 
 const Parallax = styled(Container)`
   overflow: hidden;
+`;
+
+const AlignText = styled.div`
+  text-align: center;
 `;
 
 export default function Index() {
   return (
     <Parallax>
       <Section>
-        <Title
-          from={{
-            left: "60%",
-          }}
-          to={{
-            left: "10%",
-            ease: "Power1.in",
-          }}
-        >
-          Todos tus clientes en un solo lugar
-        </Title>
+        <AlignText>
+          <Title>Todo en un solo lugar</Title>
+          <Subtitle>
+            Tus clientes, tus ganancias, hasta tus promomociones!
+          </Subtitle>
+        </AlignText>
         <Image
           from={{
             left: 0,
+            opacity: 1,
           }}
           to={{
-            left: "20%",
-            ease: "Power1.in",
+            left: "100%",
+            opacity: 0,
           }}
+          ease="Power1.in"
           src="/iphone.png"
         />
+        <SvgArrow width="150px" height="100px" />
       </Section>
-
       <Section>
         <Title
           from={{

@@ -6,6 +6,8 @@ const Img = styled.img`
   position: relative;
   width: 100%;
   height: auto;
+  ${({ width }) => (width ? `width: ${width} ;` : ``)}
+  ${({ height }) => (height ? `height: ${height} ;` : ``)}
 `;
 
 const Image = ({ src, width, height, ...options }) => (
