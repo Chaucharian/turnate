@@ -25,6 +25,10 @@ class MyApp extends App {
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           />
+          <link
+            href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Source+Sans+Pro:300,400,700|Alegreya+Sans+SC|Kreon|Montserrat:400,400i,700,800,900,900i|Anton|Lobster|Abril+Fatface|Anton|Lobster&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <StylesProvider injectFirst>
           <ThemeProvider theme={theme}>

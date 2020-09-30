@@ -5,20 +5,21 @@ import { Typography as MaterialTypography } from "@material-ui/core";
 
 const Typography = styled(MaterialTypography)`
   position: relative;
-  font-size: 68px;
-  font-weight: 800;
+  font-size: 25px;
+  font-weight: 400;
   font-family: Raleway;
-
-  color: ${({ color }) => (color ? color : `white`)};
+  color: ${props.color ? props.color : `white`};
   @media screen and (max-width: 479px) {
-    font-size: 50px;
+    font-size: 15px;
   }
 `;
 
-const Title = ({ children, ...options }) => (
+const Subtitle = ({ color, children, ...options }) => (
   <Tween {...options}>
-    <Typography variant={"h1"}>{children}</Typography>
+    <Typography color={color} variant={"p"}>
+      {children}
+    </Typography>
   </Tween>
 );
 
-export default Title;
+export default Subtitle;
