@@ -1,7 +1,14 @@
 import React from "react";
 import { Container } from "@material-ui/core";
 import styled from "styled-components";
-import { Section, Title, Subtitle, Image, SvgArrow } from "src/components";
+import {
+  Section,
+  Title,
+  Subtitle,
+  Image,
+  SvgArrow,
+  Mobile,
+} from "src/components";
 
 const Parallax = styled(Container)`
   overflow: hidden;
@@ -18,22 +25,32 @@ export default function Index() {
         <AlignText>
           <Title>Todo en un solo lugar</Title>
           <Subtitle>
-            Tus clientes, tus ganancias, hasta tus promomociones!
+            Tus clientes, tus ganancias, incluso tus promomociones
           </Subtitle>
         </AlignText>
-        <Image
+        <Mobile
           from={{
             left: 0,
             opacity: 1,
           }}
           to={{
-            left: "100%",
+            left: "50%",
             opacity: 0,
           }}
           ease="Power1.in"
-          src="/iphone.png"
+          src="/login.png"
         />
-        <SvgArrow width="150px" height="100px" />
+        <SvgArrow
+          from={{
+            opacity: 1,
+          }}
+          to={{
+            opacity: 0,
+          }}
+          ease="Power1.in"
+          width="80px"
+          height="80px"
+        />
       </Section>
       <Section>
         <Title

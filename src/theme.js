@@ -5,10 +5,10 @@ import { red } from "@material-ui/core/colors";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#556cd6",
+      main: "#000",
     },
     secondary: {
-      main: "#19857b",
+      main: "#FFF",
     },
     error: {
       main: red.A400,
@@ -18,6 +18,9 @@ const theme = createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       "@global": {
+        html: {
+          background: "#000",
+        },
         body: {
           background: "linear-gradient(141deg, #000 0%, #000 51%, #292828 75%)",
           // "linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)",
