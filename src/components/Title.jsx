@@ -16,8 +16,8 @@ const Typography = styled(MaterialTypography)`
   }
 `;
 
-const Title = ({ children, ...options }) => (
-  <TransitionMounted>
+const Title = ({ children, heightAuto, ...options }) => (
+  <TransitionMounted heightAuto={heightAuto}>
     <Tween {...options}>
       <Typography variant={"h1"}>{children}</Typography>
     </Tween>

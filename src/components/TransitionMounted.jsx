@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useMounted } from "src/hooks";
 
 const Transition = styled.div`
-  ${({ transition, time = 2 }) => `
+  ${({ transition, time = 2, heightAuto }) => `
     width: 100%;
-    height: 100%;
+    height: ${heightAuto ? `auto` : `100%`};
     opacity: 0;
     -webkit-transition: opacity ${time}s ease-in-out;
     -moz-transition: opacity ${time}s ease-in-out;
@@ -20,11 +20,11 @@ const Transition = styled.div`
 `}
 `;
 
-const TransitionMounted = ({ time, children }) => {
+const TransitionMounted = ({ time, heightAuto, children }) => {
   const mounted = useMounted();
 
   return (
-    <Transition transition={mounted} time={time}>
+    <Transition heightAuto={heightAuto} transition={mounted} time={time}>
       {children}
     </Transition>
   );

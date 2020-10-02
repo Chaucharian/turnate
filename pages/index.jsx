@@ -18,6 +18,10 @@ const AlignText = styled.div`
   text-align: center;
 `;
 
+const TextContainer = styled.div`
+  position: relative;
+`;
+
 export default function Index() {
   return (
     <Parallax>
@@ -55,59 +59,138 @@ export default function Index() {
       <Section>
         <Title
           from={{
-            left: 0,
+            left: "-90%",
           }}
           to={{
-            left: "80%",
-            // ease: "Circ.easeOutExpo",
-            ease: "Power1.in",
+            left: "0%",
           }}
+          ease="Power1.in"
         >
-          Todos tus clientes en un solo lugar
+          Facilitale la vida a tus clientes y a vos
         </Title>
-        <Image
+      </Section>
+      <Section>
+        <Title
+          heightAuto
           from={{
-            left: 0,
+            left: "150%",
           }}
           to={{
-            left: "20%",
-            ease: "Power1.in",
+            left: "0%",
           }}
-          src="/iphone.png"
+          ease="Power1.in"
+        >
+          Tus clientes eligen
+        </Title>
+        <Mobile
+          from={{
+            opacity: 0,
+            left: "-90%",
+          }}
+          to={{
+            left: "30%",
+            opacity: 1,
+          }}
+          ease="Power1.in"
+          src="/turnos.png"
         />
       </Section>
       <Section>
         <Title
-          position="0"
+          heightAuto
           from={{
-            top: "50%",
-            scale: 0,
+            left: "-100%",
           }}
           to={{
-            top: "50%",
-            scale: 1.5,
-            // autoAlpha: 0.05,
-            left: 300,
-            ease: "Linear.easeNone",
+            left: "0%",
           }}
+          ease="Power1.in"
         >
-          Todos tus clientes en un solo lugar
+          En 3 simples pasos
         </Title>
-        <Image src="/iphone.png" width="200px" height="400px" />
+        <Mobile
+          from={{
+            left: "-130%",
+          }}
+          to={{
+            left: "10%",
+          }}
+          ease="Power1.in"
+          src="/barber.png"
+        />
+      </Section>
+      <Section>
+        <Title
+          heightAuto
+          from={{
+            left: "-100%",
+          }}
+          to={{
+            left: "0%",
+          }}
+          ease="Power1.in"
+        >
+          1. Elegi el servicio
+        </Title>
+        <Mobile
+          from={{
+            left: "-130%",
+          }}
+          to={{
+            left: "10%",
+          }}
+          ease="Power1.in"
+          src="/1.png"
+        />
+      </Section>
+      <Section>
+        <Title
+          heightAuto
+          from={{
+            left: "-100%",
+          }}
+          to={{
+            left: "0%",
+          }}
+          ease="Power1.in"
+        >
+          2. Elegi el dia y la hora
+        </Title>
+        <Mobile
+          from={{
+            left: "-130%",
+          }}
+          to={{
+            left: "10%",
+          }}
+          ease="Power1.in"
+          src="/2.png"
+        />
+      </Section>
+      <Section>
+        <Title
+          heightAuto
+          from={{
+            left: "-100%",
+          }}
+          to={{
+            left: "0%",
+          }}
+          ease="Power1.in"
+        >
+          3. Confirma
+        </Title>
+        <Mobile
+          from={{
+            left: "-130%",
+          }}
+          to={{
+            left: "10%",
+          }}
+          ease="Power1.in"
+          src="/3.png"
+        />
       </Section>
     </Parallax>
-    // <Container maxWidth="sm">
-    //   <Header title="EEEAA" />
-    //   <Content></Content>
-    //   {/* <Title>Home Page Title with styled-components</Title>
-    //   <Box my={4}>
-    //     <Typography variant="h4" component="h1" gutterBottom>
-    //       Next.js v4-beta example
-    //     </Typography>
-    //     <Link href="/about" color="secondary">
-    //       Go to the about page
-    //     </Link>
-    //   </Box> */}
-    // </Container>
   );
 }
