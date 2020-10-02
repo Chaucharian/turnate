@@ -16,8 +16,8 @@ const Typography = styled(MaterialTypography)`
   }
 `;
 
-const Subtitle = ({ color, children, ...options }) => (
-  <TransitionMounted>
+const Subtitle = ({ color, boxOptions, children, ...options }) => (
+  <TransitionMounted {...boxOptions}>
     <Tween {...options}>
       <Typography color={color} variant={"subtitle1"}>
         {children}

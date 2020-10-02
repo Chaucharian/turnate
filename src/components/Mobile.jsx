@@ -40,17 +40,17 @@ const Img = styled.img`
   //   ${({ height }) => (height ? `height: ${height} ;` : ``)}
 `;
 
-const Image = ({ src, width, height, ...options }) => (
+const Mobile = ({ src, alt, width, height, ...options }) => (
   <TransitionMounted time={5}>
     <Tween {...options}>
       <Container>
         <Container2>
           <MobileBackground src={src} width={width} height={height} />
-          <Img src="/iphone.png" width={width} height={height} />
+          <Img src="/iphone.png" alt={alt} width={width} height={height} />
         </Container2>
       </Container>
     </Tween>
   </TransitionMounted>
 );
 
-export default Image;
+export default Mobile;

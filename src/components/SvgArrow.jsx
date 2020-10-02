@@ -4,8 +4,11 @@ import { Tween } from "react-gsap";
 
 const SvgContainer = styled.div`
   position: absolute;
-  left: ${({ width }) => `calc(40%)`};
+  left: 40%;
   bottom: 0%;
+  @media screen and (min-width: 960px) {
+    left: 46.5%;
+  }
 `;
 
 const SvgAnimation = styled.div`
@@ -16,11 +19,10 @@ const SvgAnimation = styled.div`
 
   @keyframes slidein {
     from {
-      bottom: 5%;
+      opacity: 1;
     }
 
     to {
-      bottom: 0%;
       opacity: 0;
     }
   }

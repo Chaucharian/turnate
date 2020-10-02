@@ -29,7 +29,7 @@ export default function Index() {
         <AlignText>
           <Title>Todo en un solo lugar</Title>
           <Subtitle>
-            Tus clientes, tus ganancias, incluso tus promomociones
+            Tus clientes, tus ganancias, incluso tus promociones
           </Subtitle>
         </AlignText>
         <Mobile
@@ -38,8 +38,8 @@ export default function Index() {
             opacity: 1,
           }}
           to={{
-            left: "50%",
-            opacity: 0,
+            left: "0%",
+            opacity: 1,
           }}
           ease="Power1.in"
           src="/login.png"
@@ -56,7 +56,7 @@ export default function Index() {
           height="80px"
         />
       </Section>
-      <Section>
+      {/* <Section>
         <Title
           from={{
             left: "-90%",
@@ -68,27 +68,45 @@ export default function Index() {
         >
           Facilitale la vida a tus clientes y a vos
         </Title>
-      </Section>
-      <Section>
+      </Section> */}
+      <Section height={115}>
         <Title
-          heightAuto
+          boxOptions={{
+            heightAuto: true,
+          }}
           from={{
-            left: "150%",
+            opacity: 0,
           }}
           to={{
-            left: "0%",
+            opacity: 1,
           }}
           ease="Power1.in"
         >
           Tus clientes eligen
         </Title>
+        <Subtitle
+          boxOptions={{
+            heightAuto: true,
+            padding: "10px 0px 0px 0px",
+          }}
+          from={{
+            opacity: 0,
+          }}
+          to={{
+            opacity: 1,
+          }}
+          ease="Power1.in"
+        >
+          Ellos mismos programan sus turnos, en cualquier momento, en cualquier
+          lugar y sin descargar una App.
+        </Subtitle>
         <Mobile
           from={{
             opacity: 0,
-            left: "-90%",
+            left: "-50%",
           }}
           to={{
-            left: "30%",
+            left: "0%",
             opacity: 1,
           }}
           ease="Power1.in"
@@ -97,12 +115,14 @@ export default function Index() {
       </Section>
       <Section>
         <Title
-          heightAuto
+          boxOptions={{
+            heightAuto: true,
+          }}
           from={{
-            left: "-100%",
+            opacity: 0,
           }}
           to={{
-            left: "0%",
+            opacity: 1,
           }}
           ease="Power1.in"
         >
@@ -121,12 +141,14 @@ export default function Index() {
       </Section>
       <Section>
         <Title
-          heightAuto
+          boxOptions={{
+            heightAuto: true,
+          }}
           from={{
-            left: "-100%",
+            opacity: 0,
           }}
           to={{
-            left: "0%",
+            opacity: 1,
           }}
           ease="Power1.in"
         >
@@ -145,12 +167,14 @@ export default function Index() {
       </Section>
       <Section>
         <Title
-          heightAuto
+          boxOptions={{
+            heightAuto: true,
+          }}
           from={{
-            left: "-100%",
+            opacity: 0,
           }}
           to={{
-            left: "0%",
+            opacity: 1,
           }}
           ease="Power1.in"
         >
@@ -158,10 +182,10 @@ export default function Index() {
         </Title>
         <Mobile
           from={{
-            left: "-130%",
+            left: "130%",
           }}
           to={{
-            left: "10%",
+            left: "-10%",
           }}
           ease="Power1.in"
           src="/2.png"
@@ -169,12 +193,14 @@ export default function Index() {
       </Section>
       <Section>
         <Title
-          heightAuto
+          boxOptions={{
+            heightAuto: true,
+          }}
           from={{
-            left: "-100%",
+            opacity: 0,
           }}
           to={{
-            left: "0%",
+            opacity: 1,
           }}
           ease="Power1.in"
         >
