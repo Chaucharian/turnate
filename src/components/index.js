@@ -7,3 +7,5 @@ export { default as SvgArrow } from "./SvgArrow";
 export { default as Mobile } from "./Mobile";
 export { default as Box } from "./Box";
 export { default as ChildrenSlider } from "./ChildrenSlider";
+export { default as WpButton } from "./WpButton";
+export { default as TextField } from "./TextField";

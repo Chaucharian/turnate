@@ -9,6 +9,8 @@ import {
   SvgArrow,
   Mobile,
   ChildrenSlider,
+  WpButton,
+  TextField,
 } from "src/components";
 
 const Parallax = styled(Container)`
@@ -17,10 +19,6 @@ const Parallax = styled(Container)`
 
 const AlignText = styled.div`
   text-align: center;
-`;
-
-const TextContainer = styled.div`
-  position: relative;
 `;
 
 export default function Index() {
@@ -129,7 +127,7 @@ export default function Index() {
             left: "-130%",
           }}
           to={{
-            left: "10%",
+            left: "0%",
           }}
           ease="Power1.in"
           src="/barber.png"
@@ -155,7 +153,7 @@ export default function Index() {
             left: "130%",
           }}
           to={{
-            left: "10%",
+            left: "0%",
           }}
           ease="Power1.in"
           src="/1.png"
@@ -181,7 +179,7 @@ export default function Index() {
             left: "-130%",
           }}
           to={{
-            left: "-10%",
+            left: "0%",
           }}
           ease="Power1.in"
           src="/2.png"
@@ -207,7 +205,7 @@ export default function Index() {
             left: "130%",
           }}
           to={{
-            left: "10%",
+            left: "0%",
           }}
           ease="Power1.in"
           src="/3.png"
@@ -228,43 +226,7 @@ export default function Index() {
         >
           Si tu atencion es con turnos ¡es para vos!
         </Title>
-        <Box
-          from={{
-            left: "-50%",
-            top: "5%",
-            opacity: 0,
-          }}
-          to={{
-            top: "5%",
-            left: "0%",
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          <Subtitle
-            boxOptions={{
-              heightAuto: true,
-            }}
-          >
-            Si tu atencion es con turnos ¡es para vos!
-          </Subtitle>
-        </Box>
-      </Section>
-      <Section>
-        <Title
-          boxOptions={{
-            heightAuto: true,
-          }}
-          from={{
-            opacity: 0,
-          }}
-          to={{
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          Si tu atencion es con turnos ¡es para vos!
-        </Title>
+        <TextField />
         <Box
           from={{
             left: "-50%",

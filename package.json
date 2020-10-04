@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
     "gsap": "^3.5.1",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-gsap": "^2.2.1",
+    "react-hook-form": "^6.9.0",
     "react-scrollmagic": "^2.2.0",
     "react-spring": "^8.0.27",
     "styled-components": "latest"
