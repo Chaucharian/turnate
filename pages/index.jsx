@@ -282,6 +282,8 @@ export default function Index() {
                 <li>Personalización de los colores del sitio</li>
                 <li>Visualizacion de turnos reservados</li>
                 <li>Programación de dias de descanso y franja horaria</li>
+                <li>Actualizaciones</li>
+                <li>Integraciónes</li>
               </ul>
               <ul>
                 <li>100</li>
@@ -300,6 +302,10 @@ export default function Index() {
                 <li>
                   <DoneIcon />
                 </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li></li>
               </ul>
             </List>
           </AlignText>
@@ -351,9 +357,11 @@ export default function Index() {
                 <li>Personalización de los colores del sitio</li>
                 <li>Visualizacion de turnos reservados</li>
                 <li>Programación de dias de descanso y franja horaria</li>
+                <li>Actualizaciones</li>
+                <li>Integraciónes</li>
               </ul>
               <ul>
-                <li>100</li>
+                <li>300</li>
                 <li>Ilimitado</li>
                 <li>
                   <DoneIcon />
@@ -373,6 +381,10 @@ export default function Index() {
                 <li>
                   <DoneIcon />
                 </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li></li>
               </ul>
             </List>
           </AlignText>
@@ -424,10 +436,18 @@ export default function Index() {
                 <li>Personalización de los colores del sitio</li>
                 <li>Visualizacion de turnos reservados</li>
                 <li>Programación de dias de descanso y franja horaria</li>
+                <li>Actualizaciones</li>
+                <li>Integraciónes</li>
               </ul>
               <ul>
                 <li>Ilimitado</li>
                 <li>Ilimitado</li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
                 <li>
                   <DoneIcon />
                 </li>

@@ -5,7 +5,7 @@ const ListContainer = styled.div`
   display: flex;
   justify-content: space-around;
   color: white;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 
   ul:first-child {
     border-right: 1px solid #424242;
