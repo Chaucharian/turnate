@@ -5,15 +5,22 @@ import { Tween, Timeline } from "react-gsap";
 
 const Content = styled.div`
   height: ${({ height }) => (height ? height : `110`)}vh;
-  margin-top: 70px;
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : `70`)}px;
 `;
 
-const Section = ({ height, children, ...options }) => (
+const Section = ({ height, marginTop, children, sceneOptions, ...options }) => (
   <Controller>
-    <Scene indicators={false} duration="100%" triggerHook="onCenter">
+    <Scene
+      indicators={false}
+      duration={500}
+      triggerHook="onCenter"
+      {...sceneOptions}
+    >
       <Timeline position={0} playState="play">
         <Tween {...options}>
-          <Content height={height}>{children}</Content>
+          <Content height={height} marginTop={marginTop}>
+            {children}
+          </Content>
         </Tween>
       </Timeline>
     </Scene>

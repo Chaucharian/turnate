@@ -5,6 +5,7 @@ import {
   Section,
   Title,
   Subtitle,
+  Subtitle2,
   Box,
   SvgArrow,
   Mobile,
@@ -28,13 +29,13 @@ export default function Index() {
         <ChildrenSlider>
           <AlignText>
             <Title>Todo en un solo lugar</Title>
-            <Subtitle>
+            <Subtitle2>
               Tus clientes, tus ganancias, incluso tus promociones
-            </Subtitle>
+            </Subtitle2>
           </AlignText>
           <AlignText>
             <Title>Envía notificaciones </Title>
-            <Subtitle>avisos de turnos y descuentos</Subtitle>
+            <Subtitle2>avisos de turnos y descuentos</Subtitle2>
           </AlignText>
           <AlignText>
             <Title>No pierdas tiempo dando turnos</Title>
@@ -79,7 +80,7 @@ export default function Index() {
         >
           Tus clientes eligen
         </Title>
-        <Subtitle
+        <Subtitle2
           boxOptions={{
             heightAuto: true,
             padding: "10px 0px 0px 0px",
@@ -93,7 +94,7 @@ export default function Index() {
           ease="Power1.in"
         >
           Ellos mismos programan sus turnos, sin descargar una App.
-        </Subtitle>
+        </Subtitle2>
         <Mobile
           from={{
             opacity: 0,
@@ -211,7 +212,7 @@ export default function Index() {
           src="/3.png"
         />
       </Section>
-      <Section>
+      <Section sceneOptions={{ duration: 200 }}>
         <Title
           boxOptions={{
             heightAuto: true,
@@ -224,29 +225,286 @@ export default function Index() {
           }}
           ease="Power1.in"
         >
-          Si tu atencion es con turnos ¡es para vos!
+          Precios
         </Title>
-        <TextField />
         <Box
           from={{
-            left: "-50%",
-            top: "5%",
+            // left: "-50%",
+            top: "20%",
             opacity: 0,
           }}
           to={{
             top: "5%",
-            left: "0%",
+            // left: "0%",
             opacity: 1,
           }}
           ease="Power1.in"
         >
-          <Subtitle
-            boxOptions={{
-              heightAuto: true,
-            }}
-          >
-            Si tu atencion es con turnos ¡es para vos!
-          </Subtitle>
+          <AlignText>
+            <Subtitle
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Basico
+            </Subtitle>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Clientes ilimitados
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              <b>100</b> turnos por mes
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Sitio web <b>.com</b>
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Notificación automatica un dia antes y una hora antes del turno
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Enviar notificaciones personalizadas a todos tus clientes.
+              (Ofertas, promociones, descuentos)
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Visualizacion de metricas mensuales
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Galeria de imagenes
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Personaliza los colores del sitio
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Visualizacion de turnos reservados
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Programacion de dias de descanso y franja horaria
+            </Subtitle2>
+          </AlignText>
+        </Box>
+      </Section>
+      <Section sceneOptions={{ duration: 200 }}>
+        <Box
+          from={{
+            // left: "-50%",
+            top: "20%",
+            opacity: 0,
+          }}
+          to={{
+            top: "5%",
+            // left: "0%",
+            opacity: 1,
+          }}
+          ease="Power1.in"
+        >
+          <AlignText>
+            <Subtitle
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Pro
+            </Subtitle>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Clientes ilimitados
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              <b>300</b> turnos por mes
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Sitio web <b>.com</b>
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Notificación automatica un dia antes y una hora antes del turno
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Enviar notificaciones personalizadas a todos tus clientes.
+              (Ofertas, promociones, descuentos)
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Visualizacion de metricas mensuales
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Galeria de imagenes
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Visualizacion de turnos reservados
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Programacion de dias de descanso y franja horaria
+            </Subtitle2>
+          </AlignText>
+        </Box>
+      </Section>
+      <Section marginTop={50} sceneOptions={{ duration: 200 }}>
+        <Box
+          from={{
+            // left: "-50%",
+            top: "20%",
+            opacity: 0,
+          }}
+          to={{
+            top: "5%",
+            // left: "0%",
+            opacity: 1,
+          }}
+          ease="Power1.in"
+        >
+          <AlignText>
+            <Subtitle
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Premium
+            </Subtitle>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Clientes ilimitados
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              <b>Ilimitados</b> turnos por mes
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Sitio web <b>.com</b>
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Notificación automatica un dia antes y una hora antes del turno
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Enviar notificaciones personalizadas a todos tus clientes.
+              (Ofertas, promociones, descuentos)
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Visualizacion de metricas mensuales
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Galeria de imagenes
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Personaliza los colores del sitio
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Visualizacion de turnos reservados
+            </Subtitle2>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Programacion de dias de descanso y franja horaria
+            </Subtitle2>
+          </AlignText>
         </Box>
       </Section>
     </Parallax>
