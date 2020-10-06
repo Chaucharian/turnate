@@ -9,7 +9,7 @@ const Container = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    // padding: 20px;
     width: ${width ? width : `100%`};
     height: ${height ? height : `70%`};
     border-radius: 25px;

@@ -12,7 +12,9 @@ import {
   ChildrenSlider,
   WpButton,
   TextField,
+  List,
 } from "src/components";
+import DoneIcon from "@material-ui/icons/Done";
 
 const Parallax = styled(Container)`
   overflow: hidden;
@@ -125,9 +127,11 @@ export default function Index() {
         </Title>
         <Mobile
           from={{
-            left: "-130%",
+            opacity: 0,
+            left: "50%",
           }}
           to={{
+            opacity: 1,
             left: "0%",
           }}
           ease="Power1.in"
@@ -151,9 +155,11 @@ export default function Index() {
         </Title>
         <Mobile
           from={{
-            left: "130%",
+            opacity: 0,
+            left: "-15%",
           }}
           to={{
+            opacity: 1,
             left: "0%",
           }}
           ease="Power1.in"
@@ -177,9 +183,11 @@ export default function Index() {
         </Title>
         <Mobile
           from={{
-            left: "-130%",
+            opacity: 0,
+            left: "50%",
           }}
           to={{
+            opacity: 1,
             left: "0%",
           }}
           ease="Power1.in"
@@ -203,9 +211,11 @@ export default function Index() {
         </Title>
         <Mobile
           from={{
-            left: "130%",
+            opacity: 0,
+            left: "-15%",
           }}
           to={{
+            opacity: 1,
             left: "0%",
           }}
           ease="Power1.in"
@@ -233,13 +243,11 @@ export default function Index() {
         </Title>
         <Box
           from={{
-            // left: "-50%",
             top: "20%",
             opacity: 0,
           }}
           to={{
             top: "5%",
-            // left: "0%",
             opacity: 1,
           }}
           ease="Power1.in"
@@ -252,77 +260,48 @@ export default function Index() {
             >
               Basico
             </Subtitle>
-            <Subtitle2
+            <Subtitle
               boxOptions={{
                 heightAuto: true,
               }}
-            >
-              Clientes ilimitados
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
+              fontOptions={{
+                fontWeight: 500,
               }}
             >
-              <b>100</b> turnos por mes
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Sitio web <b>.com</b>
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Notificación automatica un dia antes y una hora antes del turno
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Enviar notificaciones personalizadas a todos tus clientes.
-              (Ofertas, promociones, descuentos)
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Visualizacion de metricas mensuales
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Galeria de imagenes
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Personaliza los colores del sitio
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Visualizacion de turnos reservados
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Programacion de dias de descanso y franja horaria
-            </Subtitle2>
+              $1999ARS /mes
+            </Subtitle>
+            <List>
+              <ul>
+                <li>Turnos por mes</li>
+                <li>Cant. de clientes</li>
+                <li>Sitio web .com</li>
+                <li>Notificaciónes automaticas</li>
+                <li>Envio de notificaciónes personalizadas</li>
+                <li>Visualizacion de metricas mensuales</li>
+                <li>Galeria de imagenes</li>
+                <li>Personalización de los colores del sitio</li>
+                <li>Visualizacion de turnos reservados</li>
+                <li>Programación de dias de descanso y franja horaria</li>
+              </ul>
+              <ul>
+                <li>100</li>
+                <li>Ilimitado</li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+              </ul>
+            </List>
           </AlignText>
         </Box>
       </Section>
@@ -333,13 +312,11 @@ export default function Index() {
       >
         <Box
           from={{
-            // left: "-50%",
             top: "20%",
             opacity: 0,
           }}
           to={{
             top: "5%",
-            // left: "0%",
             opacity: 1,
           }}
           ease="Power1.in"
@@ -352,70 +329,52 @@ export default function Index() {
             >
               Pro
             </Subtitle>
-            <Subtitle2
+            <Subtitle
               boxOptions={{
                 heightAuto: true,
               }}
-            >
-              Clientes ilimitados
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
+              fontOptions={{
+                fontWeight: 500,
               }}
             >
-              <b>300</b> turnos por mes
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Sitio web <b>.com</b>
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Notificación automatica un dia antes y una hora antes del turno
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Enviar notificaciones personalizadas a todos tus clientes.
-              (Ofertas, promociones, descuentos)
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Visualizacion de metricas mensuales
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Galeria de imagenes
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Visualizacion de turnos reservados
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Programacion de dias de descanso y franja horaria
-            </Subtitle2>
+              $3999ARS /mes
+            </Subtitle>
+            <List>
+              <ul>
+                <li>Turnos por mes</li>
+                <li>Cant. de clientes</li>
+                <li>Sitio web .com</li>
+                <li>Notificaciónes automaticas</li>
+                <li>Envio de notificaciónes personalizadas</li>
+                <li>Visualizacion de metricas mensuales</li>
+                <li>Galeria de imagenes</li>
+                <li>Personalización de los colores del sitio</li>
+                <li>Visualizacion de turnos reservados</li>
+                <li>Programación de dias de descanso y franja horaria</li>
+              </ul>
+              <ul>
+                <li>100</li>
+                <li>Ilimitado</li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li></li>
+                <li></li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li></li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+              </ul>
+            </List>
           </AlignText>
         </Box>
       </Section>
@@ -426,13 +385,11 @@ export default function Index() {
       >
         <Box
           from={{
-            // left: "-50%",
             top: "20%",
             opacity: 0,
           }}
           to={{
             top: "5%",
-            // left: "0%",
             opacity: 1,
           }}
           ease="Power1.in"
@@ -445,77 +402,58 @@ export default function Index() {
             >
               Premium
             </Subtitle>
-            <Subtitle2
+            <Subtitle
               boxOptions={{
                 heightAuto: true,
               }}
-            >
-              Clientes ilimitados
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
+              fontOptions={{
+                fontWeight: 500,
               }}
             >
-              <b>Ilimitados</b> turnos por mes
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Sitio web <b>.com</b>
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Notificación automatica un dia antes y una hora antes del turno
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Enviar notificaciones personalizadas a todos tus clientes.
-              (Ofertas, promociones, descuentos)
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Visualizacion de metricas mensuales
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Galeria de imagenes
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Personaliza los colores del sitio
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Visualizacion de turnos reservados
-            </Subtitle2>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Programacion de dias de descanso y franja horaria
-            </Subtitle2>
+              $4999ARS /mes
+            </Subtitle>
+            <List>
+              <ul>
+                <li>Turnos por mes</li>
+                <li>Cant. de clientes</li>
+                <li>Sitio web .com</li>
+                <li>Notificaciónes automaticas</li>
+                <li>Envio de notificaciónes personalizadas</li>
+                <li>Visualizacion de metricas mensuales</li>
+                <li>Galeria de imagenes</li>
+                <li>Personalización de los colores del sitio</li>
+                <li>Visualizacion de turnos reservados</li>
+                <li>Programación de dias de descanso y franja horaria</li>
+              </ul>
+              <ul>
+                <li>Ilimitado</li>
+                <li>Ilimitado</li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+                <li>
+                  <DoneIcon />
+                </li>
+              </ul>
+            </List>
           </AlignText>
         </Box>
       </Section>

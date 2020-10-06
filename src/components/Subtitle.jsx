@@ -7,7 +7,7 @@ import TransitionMounted from "./TransitionMounted";
 const Typography = styled(MaterialTypography)`
   position: relative;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : `600`)};
   font-family: Raleway;
   color: ${({ color }) => (color ? color : `white`)};
 
@@ -16,10 +16,10 @@ const Typography = styled(MaterialTypography)`
   }
 `;
 
-const Subtitle = ({ color, boxOptions, children, ...options }) => (
+const Subtitle = ({ color, boxOptions, children, fontOptions, ...options }) => (
   <TransitionMounted {...boxOptions}>
     <Tween {...options}>
-      <Typography color={color} variant={"subtitle1"}>
+      <Typography color={color} variant={"subtitle1"} {...fontOptions}>
         {children}
       </Typography>
     </Tween>

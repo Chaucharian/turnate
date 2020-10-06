@@ -10,3 +10,4 @@ export { default as Box } from "./Box";
 export { default as ChildrenSlider } from "./ChildrenSlider";
 export { default as WpButton } from "./WpButton";
 export { default as TextField } from "./TextField";
+export { default as List } from "./List";
