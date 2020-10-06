@@ -13,6 +13,7 @@ import {
   WpButton,
   TextField,
   List,
+  ContactForm,
 } from "src/components";
 import DoneIcon from "@material-ui/icons/Done";
 
@@ -22,6 +23,7 @@ const Parallax = styled(Container)`
 
 const AlignText = styled.div`
   text-align: center;
+  width: 100%;
 `;
 
 export default function Index() {
@@ -268,7 +270,7 @@ export default function Index() {
                 fontWeight: 500,
               }}
             >
-              $1999ARS /mes
+              $1990ARS /mes
             </Subtitle>
             <List>
               <ul>
@@ -343,7 +345,7 @@ export default function Index() {
                 fontWeight: 500,
               }}
             >
-              $3999ARS /mes
+              $3990ARS /mes
             </Subtitle>
             <List>
               <ul>
@@ -422,7 +424,7 @@ export default function Index() {
                 fontWeight: 500,
               }}
             >
-              $4999ARS /mes
+              $4990ARS /mes
             </Subtitle>
             <List>
               <ul>
@@ -475,6 +477,54 @@ export default function Index() {
               </ul>
             </List>
           </AlignText>
+        </Box>
+      </Section>
+      <Section sceneOptions={{ triggerHook: "onEnter" }}>
+        <Title
+          boxOptions={{
+            heightAuto: true,
+          }}
+          from={{
+            opacity: 0,
+          }}
+          to={{
+            opacity: 1,
+          }}
+          ease="Power1.in"
+        >
+          Contacto
+        </Title>
+        <Box
+          padding={25}
+          height="auto"
+          from={{
+            top: "20%",
+            opacity: 0,
+          }}
+          to={{
+            top: "5%",
+            opacity: 1,
+          }}
+          ease="Power1.in"
+        >
+          <ContactForm>
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              Ingresa tu email y nosotros te contactaremos
+            </Subtitle2>
+            <TextField />
+            <Subtitle2
+              boxOptions={{
+                heightAuto: true,
+              }}
+            >
+              O
+            </Subtitle2>
+            <WpButton />
+          </ContactForm>
         </Box>
       </Section>
     </Parallax>

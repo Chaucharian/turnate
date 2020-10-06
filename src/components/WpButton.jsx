@@ -30,9 +30,12 @@ const FontContent = styled.div`
   height: 100%;
 `;
 
-const WpButton = ({ height, children, ...options }) => (
+const WpButton = () => (
   <Content>
-    <Link href="https://wa.me/542235854477" target="_blank">
+    <Link
+      href="https://api.whatsapp.com/send?phone=542235373667&text=%C2%A1Hola!%20Estoy%20interesado%20en%20contratar%20alg%C3%BAn%20plan%20del%20sistema%20de%20turnos%20TeAnoto%20y%20me%20gustar%C3%ADa%20que%20me%20ofrezcan%20el%20que%20mejor%20se%20adapte%20a%20mis%20necesidades."
+      target="_blank"
+    >
       <FontContent>
         <WhatsAppIcon />
         Contactar

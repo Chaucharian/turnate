@@ -3,6 +3,8 @@ import { useTransition, animated } from "react-spring";
 import styled from "styled-components";
 
 const Container = styled.div`
+  display: flex;
+  justify-content: center;
   position: relative;
   height: 175px;
 `;

@@ -4,12 +4,12 @@ import { Tween } from "react-gsap";
 import TransitionMounted from "./TransitionMounted";
 
 const Container = styled.div`
-  ${({ color, width, height }) => `
+  ${({ color, width, height, padding }) => `
     margin-top: 25px;
     position: relative;
     display: flex;
     justify-content: center;
-    // padding: 20px;
+    padding:  ${padding ? padding : `0`}px;
     width: ${width ? width : `100%`};
     height: ${height ? height : `70%`};
     border-radius: 25px;
@@ -18,10 +18,10 @@ const Container = styled.div`
 `}
 `;
 
-const Box = ({ color, width, height, children, ...options }) => (
+const Box = ({ color, width, height, padding, children, ...options }) => (
   <TransitionMounted time={5}>
     <Tween {...options}>
-      <Container color={color} width={width} height={height}>
+      <Container color={color} width={width} padding={padding} height={height}>
         {children}
       </Container>
     </Tween>

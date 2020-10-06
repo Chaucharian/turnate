@@ -5,9 +5,12 @@ import { useForm } from "react-hook-form";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
 const Form = styled.form`
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  display: block;
+  // display: flex;
+  // justify-content: space-evenly;
+  @media screen and (max-width: 479px) {
+    display: block;
+  }
 `;
 
 const Button = styled.button`
@@ -18,19 +21,20 @@ const Button = styled.button`
   border: none;
   background-color: #27ae60;
   border-radius: 5px;
-  width: 90px;
-  height: 100%;
+  width: 100%;
+  height: 45px;
   cursor: pointer;
 `;
 
 const Content = styled.div`
   ${({ error }) => `
-  height: 45px;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 15px;
 
   .MuiFormControl-root {
-  
+    width: 100%;
+    margin-bottom: 15px;
     label {
       color: ${error ? `#ff0000` : `#FFF`} !important;
       font-weight: 500;

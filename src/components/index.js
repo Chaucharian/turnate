@@ -11,3 +11,4 @@ export { default as ChildrenSlider } from "./ChildrenSlider";
 export { default as WpButton } from "./WpButton";
 export { default as TextField } from "./TextField";
 export { default as List } from "./List";
+export { default as ContactForm } from "./ContactForm";
