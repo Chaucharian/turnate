@@ -4,7 +4,7 @@ import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
 
 const Content = styled.div`
-  height: ${({ height }) => (height ? height : `110`)}vh;
+  height: ${({ height }) => (height ? height : `110vh`)};
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : `70`)}px;
 `;
 

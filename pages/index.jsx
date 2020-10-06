@@ -65,7 +65,7 @@ export default function Index() {
           height="80px"
         />
       </Section>
-      <Section height={115}>
+      <Section height={`115vh`}>
         <Title
           boxOptions={{
             heightAuto: true,
@@ -212,7 +212,11 @@ export default function Index() {
           src="/3.png"
         />
       </Section>
-      <Section sceneOptions={{ duration: 200 }}>
+      <Section
+        height={"100%"}
+        marginTop={`0`}
+        sceneOptions={{ offset: 200, triggerHook: "onEnter" }}
+      >
         <Title
           boxOptions={{
             heightAuto: true,
@@ -322,7 +326,11 @@ export default function Index() {
           </AlignText>
         </Box>
       </Section>
-      <Section sceneOptions={{ duration: 200 }}>
+      <Section
+        height={"100%"}
+        marginTop={`0`}
+        sceneOptions={{ triggerHook: "onEnter" }}
+      >
         <Box
           from={{
             // left: "-50%",
@@ -411,7 +419,11 @@ export default function Index() {
           </AlignText>
         </Box>
       </Section>
-      <Section marginTop={50} sceneOptions={{ duration: 200 }}>
+      <Section
+        marginTop={`0`}
+        height={"100%"}
+        sceneOptions={{ triggerHook: "onEnter" }}
+      >
         <Box
           from={{
             // left: "-50%",
