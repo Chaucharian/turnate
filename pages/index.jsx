@@ -260,7 +260,7 @@ export default function Index() {
                 heightAuto: true,
               }}
             >
-              Basico
+              Básico
             </Subtitle>
             <Subtitle
               boxOptions={{
@@ -277,15 +277,15 @@ export default function Index() {
                 <li>Turnos por mes</li>
                 <li>Cant. de clientes</li>
                 <li>Sitio web .com</li>
-                <li>Notificaciónes automaticas</li>
-                <li>Envio de notificaciónes personalizadas</li>
-                <li>Visualizacion de metricas mensuales</li>
-                <li>Galeria de imagenes</li>
+                <li>Notificaciones automáticas</li>
+                <li>Envio de notificaciones personalizadas</li>
+                <li>Visualización de métricas mensuales</li>
+                <li>Galería de imágenes</li>
                 <li>Personalización de los colores del sitio</li>
-                <li>Visualizacion de turnos reservados</li>
-                <li>Programación de dias de descanso y franja horaria</li>
+                <li>Visualización de turnos reservados</li>
+                <li>Programación de días de descanso y franja horaria</li>
                 <li>Actualizaciones</li>
-                <li>Integraciónes</li>
+                <li>Integraciones</li>
               </ul>
               <ul>
                 <li>100</li>
@@ -352,15 +352,15 @@ export default function Index() {
                 <li>Turnos por mes</li>
                 <li>Cant. de clientes</li>
                 <li>Sitio web .com</li>
-                <li>Notificaciónes automaticas</li>
-                <li>Envio de notificaciónes personalizadas</li>
-                <li>Visualizacion de metricas mensuales</li>
-                <li>Galeria de imagenes</li>
+                <li>Notificaciones automáticas</li>
+                <li>Envio de notificaciones personalizadas</li>
+                <li>Visualización de métricas mensuales</li>
+                <li>Galería de imágenes</li>
                 <li>Personalización de los colores del sitio</li>
-                <li>Visualizacion de turnos reservados</li>
-                <li>Programación de dias de descanso y franja horaria</li>
+                <li>Visualización de turnos reservados</li>
+                <li>Programación de días de descanso y franja horaria</li>
                 <li>Actualizaciones</li>
-                <li>Integraciónes</li>
+                <li>Integraciones</li>
               </ul>
               <ul>
                 <li>300</li>
@@ -431,15 +431,15 @@ export default function Index() {
                 <li>Turnos por mes</li>
                 <li>Cant. de clientes</li>
                 <li>Sitio web .com</li>
-                <li>Notificaciónes automaticas</li>
-                <li>Envio de notificaciónes personalizadas</li>
-                <li>Visualizacion de metricas mensuales</li>
-                <li>Galeria de imagenes</li>
+                <li>Notificaciones automáticas</li>
+                <li>Envio de notificaciones personalizadas</li>
+                <li>Visualización de métricas mensuales</li>
+                <li>Galería de imágenes</li>
                 <li>Personalización de los colores del sitio</li>
-                <li>Visualizacion de turnos reservados</li>
-                <li>Programación de dias de descanso y franja horaria</li>
+                <li>Visualización de turnos reservados</li>
+                <li>Programación de días de descanso y franja horaria</li>
                 <li>Actualizaciones</li>
-                <li>Integraciónes</li>
+                <li>Integraciones</li>
               </ul>
               <ul>
                 <li>Ilimitado</li>
