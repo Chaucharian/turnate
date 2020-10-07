@@ -25,6 +25,7 @@ const ListContainer = styled.div`
       justify-content: center;
       align-items: center;
       height: 50px;
+      line-height: normal;
       background: rgba(255, 255, 255, 0.12);
       border-bottom: 1px solid #424242;
     }

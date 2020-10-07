@@ -6,12 +6,12 @@ import TransitionMounted from "./TransitionMounted";
 const Container = styled.div`
   ${({ color, width, height, padding, shadow = true }) => `
     margin-top: 25px;
-    position: relative;
+    // position: relative;
     display: flex;
     justify-content: center;
     padding:  ${padding ? padding : `0`}px;
     width: ${width ? width : `100%`};
-    height: ${height ? height : `70%`};
+    height: ${height ? height : `100%`};
     border-radius: 25px;
     ${shadow ? `box-shadow: 0px 0px 10px rgb(255 255 255 / 20%);` : ``}
     background-color: black;

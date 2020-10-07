@@ -11,7 +11,7 @@ const Typography = styled(MaterialTypography)`
   font-family: Raleway;
   color: ${({ color }) => (color ? color : `white`)};
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 630px) {
     font-size: 50px;
   }
 `;

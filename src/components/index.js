@@ -12,3 +12,4 @@ export { default as WpButton } from "./WpButton";
 export { default as TextField } from "./EmailForm";
 export { default as List } from "./List";
 export { default as Contact } from "./Contact";
+export { default as PricesSection } from "./PricesSection";
