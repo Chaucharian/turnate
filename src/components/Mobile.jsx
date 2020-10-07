@@ -24,20 +24,16 @@ const MobileBackground = styled.img`
   top: 10%;
   width: 260px;
   height: auto;
-  left: 10%;
+  left: 3%;
   @media screen and (min-width: 360px) {
     left: 13%;
   }
-  //   ${({ width }) => (width ? `width: ${width} ;` : ``)}
-  //   ${({ height }) => (height ? `height: ${height} ;` : ``)}
 `;
 
 const Img = styled.img`
   position: absolute;
   width: 360px;
   height: auto;
-  //   ${({ width }) => (width ? `width: ${width} ;` : ``)}
-  //   ${({ height }) => (height ? `height: ${height} ;` : ``)}
 `;
 
 const Mobile = ({ src, alt, width, height, ...options }) => (
