@@ -10,10 +10,8 @@ import {
   SvgArrow,
   Mobile,
   ChildrenSlider,
-  WpButton,
-  TextField,
   List,
-  ContactForm,
+  Contact,
 } from "src/components";
 import DoneIcon from "@material-ui/icons/Done";
 
@@ -270,15 +268,16 @@ export default function Index() {
                 fontWeight: 500,
               }}
             >
-              $1990ARS /mes
+              $1.990ARS /mes
             </Subtitle>
             <List>
               <ul>
                 <li>Turnos por mes</li>
                 <li>Cant. de clientes</li>
                 <li>Sitio web .com</li>
+                <li>Acceso directo desde el dispositivo</li>
                 <li>Notificaciones automáticas</li>
-                <li>Envio de notificaciones personalizadas</li>
+                <li>Envío de notificaciones personalizadas</li>
                 <li>Visualización de métricas mensuales</li>
                 <li>Galería de imágenes</li>
                 <li>Personalización de los colores del sitio</li>
@@ -290,6 +289,9 @@ export default function Index() {
               <ul>
                 <li>100</li>
                 <li>Ilimitado</li>
+                <li>
+                  <DoneIcon />
+                </li>
                 <li>
                   <DoneIcon />
                 </li>
@@ -345,15 +347,16 @@ export default function Index() {
                 fontWeight: 500,
               }}
             >
-              $3990ARS /mes
+              $3.499ARS /mes
             </Subtitle>
             <List>
               <ul>
                 <li>Turnos por mes</li>
                 <li>Cant. de clientes</li>
                 <li>Sitio web .com</li>
+                <li>Acceso directo desde el dispositivo</li>
                 <li>Notificaciones automáticas</li>
-                <li>Envio de notificaciones personalizadas</li>
+                <li>Envío de notificaciones personalizadas</li>
                 <li>Visualización de métricas mensuales</li>
                 <li>Galería de imágenes</li>
                 <li>Personalización de los colores del sitio</li>
@@ -365,6 +368,9 @@ export default function Index() {
               <ul>
                 <li>300</li>
                 <li>Ilimitado</li>
+                <li>
+                  <DoneIcon />
+                </li>
                 <li>
                   <DoneIcon />
                 </li>
@@ -424,15 +430,16 @@ export default function Index() {
                 fontWeight: 500,
               }}
             >
-              $4990ARS /mes
+              $4.499ARS /mes
             </Subtitle>
             <List>
               <ul>
                 <li>Turnos por mes</li>
                 <li>Cant. de clientes</li>
                 <li>Sitio web .com</li>
+                <li>Acceso directo desde el dispositivo</li>
                 <li>Notificaciones automáticas</li>
-                <li>Envio de notificaciones personalizadas</li>
+                <li>Envío de notificaciones personalizadas</li>
                 <li>Visualización de métricas mensuales</li>
                 <li>Galería de imágenes</li>
                 <li>Personalización de los colores del sitio</li>
@@ -474,6 +481,7 @@ export default function Index() {
                 <li>
                   <DoneIcon />
                 </li>
+                <li>Consultar</li>
               </ul>
             </List>
           </AlignText>
@@ -495,6 +503,7 @@ export default function Index() {
           Contacto
         </Title>
         <Box
+          shadow={false}
           padding={25}
           height="auto"
           from={{
@@ -507,24 +516,7 @@ export default function Index() {
           }}
           ease="Power1.in"
         >
-          <ContactForm>
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              Ingresa tu email y nosotros te contactaremos
-            </Subtitle2>
-            <TextField />
-            <Subtitle2
-              boxOptions={{
-                heightAuto: true,
-              }}
-            >
-              O
-            </Subtitle2>
-            <WpButton />
-          </ContactForm>
+          <Contact />
         </Box>
       </Section>
     </Parallax>

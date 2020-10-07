@@ -4,6 +4,17 @@ import { TextField as MaterialTextField } from "@material-ui/core";
 import { useForm } from "react-hook-form";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
+const SuccessMessage = styled.p`
+  font-family: Raleway;
+  font-size: 15px;
+  color: #27ae60;
+`;
+
+const ErrorMessage = styled.p`
+  font-family: Raleway;
+  font-size: 15px;
+  color: red;
+`;
 const Form = styled.form`
   display: block;
   // display: flex;
@@ -14,6 +25,7 @@ const Form = styled.form`
 `;
 
 const Button = styled.button`
+  font-family: Raleway;
   font-size: 17px;
   font-weight: 600;
   color: #fff;
@@ -50,8 +62,10 @@ const Content = styled.div`
   `}
 `;
 
-const TextField = ({ height, children, onSubmit, ...options }) => {
+const EmailForm = ({ height, children, onSubmit, response, ...options }) => {
   const { register, handleSubmit, setError, errors } = useForm();
+  const success = response?.success && response?.message;
+  const error = !response?.success && response?.message;
 
   return (
     <Content error={errors.email ? true : false}>
@@ -73,9 +87,11 @@ const TextField = ({ height, children, onSubmit, ...options }) => {
           Enviar
           {/* <ArrowForwardIcon /> */}
         </Button>
+        {success && <SuccessMessage>{response.message}</SuccessMessage>}
+        {error && <ErrorMessage> {response.message}</ErrorMessage>}
       </Form>
     </Content>
   );
 };
 
-export default TextField;
+export default EmailForm;

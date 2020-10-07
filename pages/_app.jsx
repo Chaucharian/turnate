@@ -25,7 +25,6 @@ class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
           />
-
           <link
             href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Source+Sans+Pro:300,400,700|Alegreya+Sans+SC|Kreon|Montserrat:400,400i,700,800,900,900i|Anton|Lobster|Abril+Fatface|Anton|Lobster&display=swap"
             rel="stylesheet"

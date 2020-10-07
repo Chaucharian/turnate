@@ -43,7 +43,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <meta
             name="description"
-            content="Una eficiente forma de agendar turnos, citas o reservas 24/7. Acopla nuestro sistema a tus necesidades y estilo de tu negocio, enviando notificaciones a tus clientes para mantener todo sincronizado."
+            content="Una eficiente forma de agendar turnos, citas o reservas. Acoplá nuestro sistema a tus necesidades y estilo de negocio, enviando notificaciones a tus clientes para mantener todo sincronizado."
           ></meta>
           <link
             rel="stylesheet"

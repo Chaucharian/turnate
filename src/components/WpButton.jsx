@@ -19,14 +19,15 @@ const Content = styled.div`
 `;
 
 const FontContent = styled.div`
+  font-family: Raleway;
   color: #fff;
   border-radius: 5px;
   background-color: #27ae60;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
   height: 100%;
 `;
 
