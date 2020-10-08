@@ -30,6 +30,7 @@ const PricesSection = () => {
       {!desktop ? (
         <>
           <Section
+            noMedia
             height={"100%"}
             marginTop={`0`}
             sceneOptions={{ offset: 200, triggerHook: "onEnter" }}
@@ -125,6 +126,7 @@ const PricesSection = () => {
             </Box>
           </Section>
           <Section
+            noMedia
             height={"100%"}
             marginTop={`0`}
             sceneOptions={{ triggerHook: "onEnter" }}
@@ -210,6 +212,7 @@ const PricesSection = () => {
             </Box>
           </Section>
           <Section
+            noMedia
             marginTop={`0`}
             height={"100%"}
             sceneOptions={{ triggerHook: "onEnter" }}

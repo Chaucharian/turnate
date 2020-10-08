@@ -6,9 +6,23 @@ import { Tween, Timeline } from "react-gsap";
 const Content = styled.div`
   height: ${({ height }) => (height ? height : `110vh`)};
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : `70`)}px;
+
+  ${({ noMedia }) =>
+    noMedia
+      ? ``
+      : `  @media screen and (max-width: 350px) {
+    height: 130vh;
+  }`}
 `;
 
-const Section = ({ height, marginTop, children, sceneOptions, ...options }) => (
+const Section = ({
+  height,
+  noMedia,
+  marginTop,
+  children,
+  sceneOptions,
+  ...options
+}) => (
   <Controller>
     <Scene
       indicators={false}
@@ -18,7 +32,7 @@ const Section = ({ height, marginTop, children, sceneOptions, ...options }) => (
     >
       <Timeline position={0} playState="play">
         <Tween {...options}>
-          <Content height={height} marginTop={marginTop}>
+          <Content noMedia={noMedia} height={height} marginTop={marginTop}>
             {children}
           </Content>
         </Tween>
