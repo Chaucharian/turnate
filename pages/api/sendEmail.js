@@ -14,7 +14,7 @@ export default async (req, res) => {
       res.send(
         JSON.stringify({
           success: true,
-          message: "¡Envio exitoso! en breve nos estaremos comunicando contigo",
+          message: "En breve nos estaremos comunicando.",
         })
       );
     })
@@ -23,7 +23,7 @@ export default async (req, res) => {
       res.send(
         JSON.stringify({
           success: false,
-          message: "Ocurrio un error, intenta mas tarde",
+          message: "Intenta mas tarde.",
         })
       );
     });

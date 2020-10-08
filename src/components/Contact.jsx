@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import EmailForm from "./EmailForm";
 import WpButton from "./WpButton";
@@ -38,6 +38,12 @@ const Contact = () => {
         setResponse(normalize);
       });
   };
+
+  useEffect(() => {
+    if (response !== null) {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  }, [response]);
 
   return (
     <Content>

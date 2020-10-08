@@ -44,7 +44,7 @@ const Content = styled.div`
   justify-content: space-evenly;
   margin-top: 15px;
   width: 260px; 
-  
+
   .MuiFormControl-root {
     width: 100%;
     margin-bottom: 15px;
@@ -88,8 +88,17 @@ const EmailForm = ({ height, children, onSubmit, response, ...options }) => {
           Enviar
           {/* <ArrowForwardIcon /> */}
         </Button>
-        {success && <SuccessMessage>{response.message}</SuccessMessage>}
-        {error && <ErrorMessage> {response.message}</ErrorMessage>}
+        {success && (
+          <SuccessMessage>
+            ¡Envío exitoso! <br />
+            {response.message}
+          </SuccessMessage>
+        )}
+        {error && (
+          <ErrorMessage>
+            Ocurrio un error. <br /> {response.message}
+          </ErrorMessage>
+        )}
       </Form>
     </Content>
   );
