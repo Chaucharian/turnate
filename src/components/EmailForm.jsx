@@ -43,7 +43,8 @@ const Content = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-top: 15px;
-
+  width: 260px; 
+  
   .MuiFormControl-root {
     width: 100%;
     margin-bottom: 15px;
