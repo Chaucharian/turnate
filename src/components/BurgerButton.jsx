@@ -6,7 +6,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 50px;
-
+  padding-top: 6px;
   button {
     display: block;
     background-color: transparent;
@@ -47,7 +47,7 @@ const Container = styled.div`
     span:nth-child(3) {
       top: 36px;
     }
-    ${({ isOpen }) => ` ${
+    ${({ isOpen }) =>
       isOpen &&
       `
     span:nth-child(1) {
@@ -62,10 +62,7 @@ const Container = styled.div`
         transform: rotate(-45deg);
         top: 33px;
     }
-    `
-    }
-    
-        `}
+    `}
   }
 `;
 

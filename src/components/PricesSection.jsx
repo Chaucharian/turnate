@@ -23,7 +23,7 @@ const Content = styled.div`
 `;
 
 const PricesSection = ({ id }) => {
-  const desktop = useMediaQuery("(min-width:600px)");
+  const desktop = useMediaQuery("(min-width:830px)");
 
   return (
     <Content>

@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { useMounted } from "src/hooks";
 
 const Transition = styled.div`
-  ${({ transition, animation, time = 2, heightAuto, padding }) => `
-    width: 100%;
+  ${({ animation, time = 2, heightAuto, width, padding }) => `
+    width: ${width ? width : `100%`};
     height: ${heightAuto ? `auto` : `100%`};
     padding: ${padding ? padding : `0px`};
     animation: ${animation && animation} ${time}s;
@@ -36,6 +36,7 @@ const TransitionMounted = ({
   time,
   animation = "fadeIn",
   heightAuto,
+  width,
   padding,
   children,
 }) => {
@@ -43,6 +44,7 @@ const TransitionMounted = ({
 
   return (
     <Transition
+      width={width}
       animation={animation}
       heightAuto={heightAuto}
       padding={padding}
