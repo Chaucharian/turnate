@@ -11,7 +11,9 @@ import {
   ChildrenSlider,
   Contact,
   PricesSection,
+  Header,
 } from "src/components";
+import { Link } from "react-scroll";
 
 const Parallax = styled(Container)`
   overflow: hidden;
@@ -25,6 +27,7 @@ const AlignText = styled.div`
 export default function Index() {
   return (
     <Parallax>
+      <Header />
       <Section>
         <ChildrenSlider>
           <AlignText>
@@ -53,19 +56,27 @@ export default function Index() {
           ease="Power1.in"
           src="/login.png"
         />
-        <SvgArrow
-          from={{
-            opacity: 1,
-          }}
-          to={{
-            opacity: 0,
-          }}
-          ease="Power1.in"
-          width="80px"
-          height="80px"
-        />
+        <Link
+          activeClass="active"
+          to="first"
+          spy={true}
+          smooth={true}
+          duration={1000}
+        >
+          <SvgArrow
+            from={{
+              opacity: 1,
+            }}
+            to={{
+              opacity: 0,
+            }}
+            ease="Power1.in"
+            width="80px"
+            height="80px"
+          />
+        </Link>
       </Section>
-      <Section height={`115vh`}>
+      <Section id="first" height={`115vh`}>
         <Title
           boxOptions={{
             heightAuto: true,
@@ -108,7 +119,7 @@ export default function Index() {
           src="/turnos.png"
         />
       </Section>
-      <Section>
+      <Section id="steps">
         <Title
           boxOptions={{
             heightAuto: true,
@@ -193,6 +204,7 @@ export default function Index() {
         />
       </Section>
       <Section>
+        <div id="section1"></div>
         <Title
           boxOptions={{
             heightAuto: true,
@@ -220,8 +232,8 @@ export default function Index() {
           src="/3.png"
         />
       </Section>
-      <PricesSection />
-      <Section sceneOptions={{ triggerHook: "onEnter" }}>
+      <PricesSection id="prices" />
+      <Section id="contact" sceneOptions={{ triggerHook: "onEnter" }}>
         <Title
           boxOptions={{
             heightAuto: true,

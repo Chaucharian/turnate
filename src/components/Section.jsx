@@ -16,6 +16,7 @@ const Content = styled.div`
 `;
 
 const Section = ({
+  id,
   height,
   noMedia,
   marginTop,
@@ -24,6 +25,7 @@ const Section = ({
   ...options
 }) => (
   <Controller>
+    <div id={id}></div>
     <Scene
       indicators={false}
       duration={500}

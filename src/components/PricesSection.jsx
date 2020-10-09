@@ -22,7 +22,7 @@ const Content = styled.div`
   }
 `;
 
-const PricesSection = () => {
+const PricesSection = ({ id }) => {
   const desktop = useMediaQuery("(min-width:600px)");
 
   return (
@@ -30,6 +30,7 @@ const PricesSection = () => {
       {!desktop ? (
         <>
           <Section
+            id={id}
             noMedia
             height={"100%"}
             marginTop={`0`}
@@ -306,6 +307,7 @@ const PricesSection = () => {
         </>
       ) : (
         <Section
+          id={id}
           height={"100%"}
           marginTop={`0`}
           sceneOptions={{ offset: 200, triggerHook: "onEnter" }}

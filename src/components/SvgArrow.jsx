@@ -6,6 +6,8 @@ const SvgContainer = styled.div`
   position: absolute;
   left: 40%;
   bottom: 0%;
+  cursor: pointer;
+
   @media screen and (min-width: 960px) {
     left: 46.5%;
   }

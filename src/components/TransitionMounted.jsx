@@ -7,14 +7,8 @@ const Transition = styled.div`
     width: 100%;
     height: ${heightAuto ? `auto` : `100%`};
     padding: ${padding ? padding : `0px`};
-    // opacity: 0;
-    // -webkit-transition: opacity ${time}s ease-in-out;
-    // -moz-transition: opacity ${time}s ease-in-out;
-    // -ms-transition: opacity ${time}s ease-in-out;
-    // -o-transition: opacity ${time}s ease-in-out;
-    // transition: opacity ${time}s ease-in-out;
-    // ${transition ? `opacity: 1;` : ``};
-    animation: ${animation && animation} 1s;
+    animation: ${animation && animation} ${time}s;
+    
     @keyframes fadeIn {
       0% {
         opacity: 0;
