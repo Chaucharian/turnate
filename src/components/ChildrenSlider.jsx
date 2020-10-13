@@ -9,7 +9,7 @@ const Container = styled.div`
   height: 175px;
 `;
 
-const ChildrenSlider = ({ delay = 4, children }) => {
+const ChildrenSlider = ({ delay = 5, children }) => {
   const [currentView, changeView] = useState(0);
   const transitions = useTransition([currentView], (item) => item, {
     from: { opacity: 0, position: "absolute" },

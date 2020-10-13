@@ -11,8 +11,8 @@ const Container = styled.div`
     display: block;
     background-color: transparent;
     outline: none;
-    width: 100%;
-    height: 45px;
+    width: 40px;
+    height: 35px;
     margin: 0px;
     padding: 0px;
     position: relative;
@@ -42,10 +42,10 @@ const Container = styled.div`
       top: 0px;
     }
     span:nth-child(2) {
-      top: 18px;
+      top: 12px;
     }
     span:nth-child(3) {
-      top: 36px;
+      top: 24px;
     }
     ${({ isOpen }) =>
       isOpen &&
@@ -60,7 +60,7 @@ const Container = styled.div`
     }
     span:nth-child(3) {
         transform: rotate(-45deg);
-        top: 33px;
+        top: 25px;
     }
     `}
   }

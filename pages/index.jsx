@@ -12,6 +12,7 @@ import {
   Contact,
   PricesSection,
   Header,
+  Image,
 } from "src/components";
 import { Link } from "react-scroll";
 
@@ -29,33 +30,6 @@ export default function Index() {
     <Parallax>
       <Header />
       <Section>
-        <ChildrenSlider>
-          <AlignText>
-            <Title>Todo en un solo lugar</Title>
-            <Subtitle2>
-              Tus clientes, tus ganancias, incluso tus promociones
-            </Subtitle2>
-          </AlignText>
-          <AlignText>
-            <Title>Envía notificaciones </Title>
-            <Subtitle2>avisos de turnos y descuentos</Subtitle2>
-          </AlignText>
-          <AlignText>
-            <Title>No pierdas tiempo dando turnos</Title>
-          </AlignText>
-        </ChildrenSlider>
-        <Mobile
-          from={{
-            left: 0,
-            opacity: 1,
-          }}
-          to={{
-            left: "0%",
-            opacity: 1,
-          }}
-          ease="Power1.in"
-          src="/login.png"
-        />
         <Link
           activeClass="active"
           to="first"
@@ -63,20 +37,80 @@ export default function Index() {
           smooth={true}
           duration={1000}
         >
-          <SvgArrow
+          <ChildrenSlider>
+            <AlignText>
+              <Image
+                alt="Sistema de turnos web"
+                width="100%"
+                height="100%"
+                src="/center_logo.png"
+              />
+              <Subtitle2>Sistema de turnos 100% web e intuitivo</Subtitle2>
+            </AlignText>
+            <AlignText>
+              <Title>Todo en un solo lugar</Title>
+              <Subtitle2>
+                Tus clientes, tus ganancias, incluso tus promociones
+              </Subtitle2>
+              <Image
+                alt="Programa tus horarios con un click"
+                src="/viewer.png"
+              />
+            </AlignText>
+            <AlignText>
+              <Title>Programa tus horarios con un click</Title>
+              <Subtitle2>y deja que el sistema se encargue de todo</Subtitle2>
+              <Image
+                alt="Programa tus horarios con un click"
+                src="/schedule.png"
+              />
+            </AlignText>
+            <AlignText>
+              <Title>Envía notificaciones </Title>
+              <Subtitle2>avisos de turnos y descuentos</Subtitle2>
+              <Image alt="¡Envia notificaciones!" src="/notification.png" />
+            </AlignText>
+            <AlignText>
+              <Title>No pierdas tiempo dando turnos</Title>
+              <Subtitle2>concentrate en tu negocio</Subtitle2>
+            </AlignText>
+          </ChildrenSlider>
+          {/* <ChildrenSlider>
+          <Image
             from={{
+              left: 0,
               opacity: 1,
             }}
             to={{
-              opacity: 0,
+              left: "0%",
+              opacity: 1,
             }}
             ease="Power1.in"
-            width="80px"
-            height="80px"
+            src="/viewer.png"
           />
+          <Image
+            from={{
+              left: 0,
+              opacity: 1,
+            }}
+            to={{
+              left: "0%",
+              opacity: 1,
+            }}
+            ease="Power1.in"
+            alt="Programa tus horarios con un click"
+            src="/schedule.png"
+          />
+        </ChildrenSlider> */}
+
+          <SvgArrow width="80px" height="80px" />
         </Link>
       </Section>
-      <Section id="first" height={`115vh`}>
+      <Section
+        id="first"
+        sceneOptions={{ triggerHook: "onEnter" }}
+        height={`115vh`}
+      >
         <Title
           boxOptions={{
             heightAuto: true,
@@ -106,7 +140,7 @@ export default function Index() {
         >
           Ellos mismos programan sus turnos, sin descargar una App.
         </Subtitle2>
-        <Mobile
+        <Image
           from={{
             opacity: 0,
             left: "-15%",
@@ -134,7 +168,7 @@ export default function Index() {
         >
           En 3 simples pasos
         </Title>
-        <Mobile
+        <Image
           from={{
             opacity: 0,
             left: "50%",
@@ -144,7 +178,7 @@ export default function Index() {
             left: "0%",
           }}
           ease="Power1.in"
-          src="/barber.png"
+          src="/reservar.png"
         />
       </Section>
       <Section>
@@ -162,7 +196,7 @@ export default function Index() {
         >
           1. Elegí el servicio
         </Title>
-        <Mobile
+        <Image
           from={{
             opacity: 0,
             left: "-15%",
@@ -190,7 +224,7 @@ export default function Index() {
         >
           2. Seleccioná día y horario
         </Title>
-        <Mobile
+        <Image
           from={{
             opacity: 0,
             left: "50%",
@@ -219,7 +253,7 @@ export default function Index() {
         >
           3. Confirmá
         </Title>
-        <Mobile
+        <Image
           from={{
             opacity: 0,
             left: "-15%",
