@@ -75,34 +75,6 @@ export default function Index() {
               <Subtitle2>concentrate en tu negocio</Subtitle2>
             </AlignText>
           </ChildrenSlider>
-          {/* <ChildrenSlider>
-          <Image
-            from={{
-              left: 0,
-              opacity: 1,
-            }}
-            to={{
-              left: "0%",
-              opacity: 1,
-            }}
-            ease="Power1.in"
-            src="/viewer.png"
-          />
-          <Image
-            from={{
-              left: 0,
-              opacity: 1,
-            }}
-            to={{
-              left: "0%",
-              opacity: 1,
-            }}
-            ease="Power1.in"
-            alt="Programa tus horarios con un click"
-            src="/schedule.png"
-          />
-        </ChildrenSlider> */}
-
           <SvgArrow width="80px" height="80px" />
         </Link>
       </Section>
