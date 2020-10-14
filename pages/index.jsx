@@ -7,7 +7,6 @@ import {
   Subtitle2,
   Box,
   SvgArrow,
-  Mobile,
   ChildrenSlider,
   Contact,
   PricesSection,
@@ -45,7 +44,7 @@ export default function Index() {
                 height="100%"
                 src="/center_logo.png"
               />
-              <Subtitle2>Sistema de turnos 100% web e intuitivo</Subtitle2>
+              <Subtitle2>Sistema de turnos online</Subtitle2>
             </AlignText>
             <AlignText>
               <Title>Todo en un solo lugar</Title>
