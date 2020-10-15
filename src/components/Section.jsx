@@ -4,15 +4,15 @@ import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
 
 const Content = styled.div`
-  height: ${({ height }) => (height ? height : `110vh`)};
+  height: ${({ height }) => (height ? height : `100vh`)};
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : `70`)}px;
 
   ${({ noMedia }) =>
     noMedia
       ? ``
-      : `  @media screen and (max-width: 350px) {
-    height: 130vh;
-  }`}
+      : `@media screen and (max-width: 400px) {
+height: 110vh;
+}`}
 `;
 
 const Section = ({

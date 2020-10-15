@@ -5,7 +5,7 @@ import { useMounted } from "src/hooks";
 const Transition = styled.div`
   ${({ animation, time = 2, heightAuto, width, padding }) => `
     width: ${width ? width : `100%`};
-    height: ${heightAuto ? `auto` : `100%`};
+    // height: ${heightAuto ? `auto` : `100%`};
     padding: ${padding ? padding : `0px`};
     animation: ${animation && animation} ${time}s;
     

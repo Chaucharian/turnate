@@ -20,6 +20,9 @@ const Content = styled.div`
   .MuiGrid-grid-sm-4 {
     flex-basis: 31.333333%;
   }
+  h1 {
+    text-align: center;
+  }
 `;
 
 const PricesSection = ({ id }) => {

@@ -19,6 +19,18 @@ const Parallax = styled(Container)`
   overflow: hidden;
 `;
 
+const VideoContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  video {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+  }
+`;
+
 const AlignText = styled.div`
   text-align: center;
   width: 100%;
@@ -28,7 +40,7 @@ export default function Index() {
   return (
     <Parallax>
       <Header />
-      <Section>
+      <Section noMedia={true} height="130vh">
         <Link
           activeClass="active"
           to="first"
@@ -49,7 +61,7 @@ export default function Index() {
             <AlignText>
               <Title>Todo en un solo lugar</Title>
               <Subtitle2>
-                Tus clientes, tus ganancias, incluso tus promociones
+                tus clientes, tus ganancias, incluso tus promociones
               </Subtitle2>
               <Image
                 alt="Programa tus horarios con un click"
@@ -82,42 +94,43 @@ export default function Index() {
         sceneOptions={{ triggerHook: "onEnter" }}
         height={`115vh`}
       >
-        <Title
-          boxOptions={{
-            heightAuto: true,
-          }}
-          from={{
-            opacity: 0,
-          }}
-          to={{
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          Tus clientes eligen
-        </Title>
-        <Subtitle2
-          boxOptions={{
-            heightAuto: true,
-            padding: "10px 0px 0px 0px",
-          }}
-          from={{
-            opacity: 0,
-          }}
-          to={{
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          Ellos mismos programan sus turnos, sin descargar una App.
-        </Subtitle2>
+        <AlignText>
+          <Title
+            boxOptions={{
+              heightAuto: true,
+            }}
+            from={{
+              opacity: 0,
+            }}
+            to={{
+              opacity: 1,
+            }}
+            ease="Power1.in"
+          >
+            Tus clientes eligen
+          </Title>
+          <Subtitle2
+            boxOptions={{
+              heightAuto: true,
+              padding: "10px 0px 0px 0px",
+            }}
+            from={{
+              opacity: 0,
+            }}
+            to={{
+              opacity: 1,
+            }}
+            ease="Power1.in"
+          >
+            ellos mismos programan sus turnos, sin descargar una App.
+          </Subtitle2>
+        </AlignText>
+
         <Image
           from={{
             opacity: 0,
-            left: "-15%",
           }}
           to={{
-            left: "0%",
             opacity: 1,
           }}
           ease="Power1.in"
@@ -125,134 +138,163 @@ export default function Index() {
         />
       </Section>
       <Section id="steps">
-        <Title
-          boxOptions={{
-            heightAuto: true,
-          }}
-          from={{
-            opacity: 0,
-          }}
-          to={{
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          En 3 simples pasos
-        </Title>
+        <AlignText>
+          <Title
+            boxOptions={{
+              heightAuto: true,
+            }}
+            from={{
+              opacity: 0,
+            }}
+            to={{
+              opacity: 1,
+            }}
+            ease="Power1.in"
+          >
+            En 3 simples pasos
+          </Title>
+        </AlignText>
+
         <Image
           from={{
             opacity: 0,
-            left: "50%",
           }}
           to={{
             opacity: 1,
-            left: "0%",
           }}
           ease="Power1.in"
           src="/reservar.png"
         />
       </Section>
       <Section>
-        <Title
-          boxOptions={{
-            heightAuto: true,
-          }}
-          from={{
-            opacity: 0,
-          }}
-          to={{
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          1. Elegí el servicio
-        </Title>
+        <AlignText>
+          <Title
+            boxOptions={{
+              heightAuto: true,
+            }}
+            from={{
+              opacity: 0,
+            }}
+            to={{
+              opacity: 1,
+            }}
+            ease="Power1.in"
+          >
+            1. Elegí el servicio
+          </Title>
+        </AlignText>
+
         <Image
           from={{
             opacity: 0,
-            left: "-15%",
           }}
           to={{
             opacity: 1,
-            left: "0%",
           }}
           ease="Power1.in"
           src="/1.png"
         />
       </Section>
       <Section>
-        <Title
-          boxOptions={{
-            heightAuto: true,
-          }}
-          from={{
-            opacity: 0,
-          }}
-          to={{
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          2. Seleccioná día y horario
-        </Title>
+        <AlignText>
+          <Title
+            boxOptions={{
+              heightAuto: true,
+            }}
+            from={{
+              opacity: 0,
+            }}
+            to={{
+              opacity: 1,
+            }}
+            ease="Power1.in"
+          >
+            2. Seleccioná día y horario
+          </Title>
+        </AlignText>
+
         <Image
           from={{
             opacity: 0,
-            left: "50%",
           }}
           to={{
             opacity: 1,
-            left: "0%",
           }}
           ease="Power1.in"
           src="/2.png"
         />
       </Section>
       <Section>
-        <div id="section1"></div>
-        <Title
-          boxOptions={{
-            heightAuto: true,
-          }}
-          from={{
-            opacity: 0,
-          }}
-          to={{
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          3. Confirmá
-        </Title>
+        <AlignText>
+          <Title
+            boxOptions={{
+              heightAuto: true,
+            }}
+            from={{
+              opacity: 0,
+            }}
+            to={{
+              opacity: 1,
+            }}
+            ease="Power1.in"
+          >
+            3. Confirmá
+          </Title>
+        </AlignText>
         <Image
           from={{
             opacity: 0,
-            left: "-15%",
           }}
           to={{
             opacity: 1,
-            left: "0%",
           }}
           ease="Power1.in"
           src="/3.png"
         />
       </Section>
+      <Section id="demo">
+        <AlignText>
+          <Title
+            boxOptions={{
+              heightAuto: true,
+            }}
+            from={{
+              opacity: 0,
+            }}
+            to={{
+              opacity: 1,
+            }}
+            ease="Power1.in"
+          >
+            Y así de fácil
+          </Title>
+        </AlignText>
+        <VideoContainer>
+          <video autoPlay={true} loop={true}>
+            <source src="/demo.mp4" type="video/mp4" />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </VideoContainer>
+      </Section>
       <PricesSection id="prices" />
       <Section id="contact" sceneOptions={{ triggerHook: "onEnter" }}>
-        <Title
-          boxOptions={{
-            heightAuto: true,
-          }}
-          from={{
-            opacity: 0,
-          }}
-          to={{
-            opacity: 1,
-          }}
-          ease="Power1.in"
-        >
-          Contacto
-        </Title>
+        <AlignText>
+          <Title
+            boxOptions={{
+              heightAuto: true,
+            }}
+            from={{
+              opacity: 0,
+            }}
+            to={{
+              opacity: 1,
+            }}
+            ease="Power1.in"
+          >
+            Contacto
+          </Title>
+        </AlignText>
+
         <Box
           shadow={false}
           padding={25}

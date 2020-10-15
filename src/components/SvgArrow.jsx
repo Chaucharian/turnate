@@ -5,7 +5,7 @@ const SvgContainer = styled.div`
   display: flex;
   justify-content: center;
   cursor: pointer;
-  height: 100%;
+  height: 75%;
   align-items: center;
 `;
 

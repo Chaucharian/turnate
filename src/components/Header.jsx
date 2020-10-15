@@ -98,17 +98,6 @@ const List = ({ isDesktop, onClick }) => (
         <li>
           <Link
             activeClass="active"
-            to="specs"
-            spy={true}
-            smooth={true}
-            duration={1000}
-          >
-            Caracteristicas
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
             to="prices"
             spy={true}
             smooth={true}
