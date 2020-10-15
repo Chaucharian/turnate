@@ -270,7 +270,7 @@ export default function Index() {
           </Title>
         </AlignText>
         <VideoContainer>
-          <video autoPlay={true} loop={true}>
+          <video controls autoPlay loop>
             <source src="/demo.mp4" type="video/mp4" />
             Sorry, your browser doesn't support embedded videos.
           </video>
