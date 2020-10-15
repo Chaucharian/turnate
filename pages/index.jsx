@@ -266,7 +266,7 @@ export default function Index() {
             }}
             ease="Power1.in"
           >
-            Y así de fácil
+            Así de fácil
           </Title>
         </AlignText>
         <VideoContainer>
