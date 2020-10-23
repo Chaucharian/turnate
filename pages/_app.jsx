@@ -99,6 +99,23 @@ class MyApp extends App {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/manifest.json" />
+          <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=G-TN8MPFP12F`}
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-TN8MPFP12F', {
+                      page_path: window.location.pathname,
+                    });
+                  `,
+                }}
+              />
         </Head>
         <StylesProvider injectFirst>
           <ThemeProvider theme={theme}>

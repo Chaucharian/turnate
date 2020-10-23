@@ -7,6 +7,12 @@ import List from "./List";
 import DoneIcon from "@material-ui/icons/Done";
 import Section from "./Section";
 import { useMediaQuery, Grid } from "@material-ui/core";
+import WpButton from "./WpButton";
+
+const AlignWp = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 const AlignText = styled.div`
   text-align: center;
@@ -51,7 +57,7 @@ const PricesSection = ({ id }) => {
               }}
               ease="Power1.in"
             >
-              Precios
+              Planes
             </Title>
             <Box
               from={{
@@ -72,16 +78,9 @@ const PricesSection = ({ id }) => {
                 >
                   Básico
                 </Subtitle>
-                <Subtitle
-                  boxOptions={{
-                    heightAuto: true,
-                  }}
-                  fontOptions={{
-                    fontWeight: 500,
-                  }}
-                >
-                  $1.990ARS /mes
-                </Subtitle>
+                <AlignWp>
+                  <WpButton />
+                </AlignWp>
                 <List>
                   <ul>
                     <li>Turnos por mes</li>
@@ -154,16 +153,9 @@ const PricesSection = ({ id }) => {
                 >
                   Pro
                 </Subtitle>
-                <Subtitle
-                  boxOptions={{
-                    heightAuto: true,
-                  }}
-                  fontOptions={{
-                    fontWeight: 500,
-                  }}
-                >
-                  $3.499ARS /mes
-                </Subtitle>
+                <AlignWp>
+                    <WpButton />
+                  </AlignWp>
                 <List>
                   <ul>
                     <li>Turnos por mes</li>
@@ -240,16 +232,9 @@ const PricesSection = ({ id }) => {
                 >
                   Premium
                 </Subtitle>
-                <Subtitle
-                  boxOptions={{
-                    heightAuto: true,
-                  }}
-                  fontOptions={{
-                    fontWeight: 500,
-                  }}
-                >
-                  $4.499ARS /mes
-                </Subtitle>
+                <AlignWp>
+                    <WpButton />
+                  </AlignWp>
                 <List>
                   <ul>
                     <li>Turnos por mes</li>
@@ -327,7 +312,7 @@ const PricesSection = ({ id }) => {
             }}
             ease="Power1.in"
           >
-            Precios
+            Planes
           </Title>
           <Grid container>
             <Grid item sm={4}>
@@ -350,16 +335,9 @@ const PricesSection = ({ id }) => {
                   >
                     Básico
                   </Subtitle>
-                  <Subtitle
-                    boxOptions={{
-                      heightAuto: true,
-                    }}
-                    fontOptions={{
-                      fontWeight: 500,
-                    }}
-                  >
-                    $1.990ARS /mes
-                  </Subtitle>
+                  <AlignWp>
+                    <WpButton />
+                  </AlignWp>
                   <List>
                     <ul>
                       <li>Turnos por mes</li>
@@ -425,16 +403,9 @@ const PricesSection = ({ id }) => {
                   >
                     Pro
                   </Subtitle>
-                  <Subtitle
-                    boxOptions={{
-                      heightAuto: true,
-                    }}
-                    fontOptions={{
-                      fontWeight: 500,
-                    }}
-                  >
-                    $3.499ARS /mes
-                  </Subtitle>
+                  <AlignWp>
+                    <WpButton />
+                  </AlignWp>
                   <List>
                     <ul>
                       <li>Turnos por mes</li>
@@ -504,16 +475,9 @@ const PricesSection = ({ id }) => {
                   >
                     Premium
                   </Subtitle>
-                  <Subtitle
-                    boxOptions={{
-                      heightAuto: true,
-                    }}
-                    fontOptions={{
-                      fontWeight: 500,
-                    }}
-                  >
-                    $4.499ARS /mes
-                  </Subtitle>
+                  <AlignWp>
+                    <WpButton />
+                  </AlignWp>
                   <List>
                     <ul>
                       <li>Turnos por mes</li>

@@ -103,7 +103,7 @@ const List = ({ isDesktop, onClick }) => (
             smooth={true}
             duration={1000}
           >
-            Precios
+            Planes
           </Link>
         </li>
         <li>
