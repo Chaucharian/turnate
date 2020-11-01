@@ -23,6 +23,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 8083"
+    "start": "next start -p 8083",
+    "pm2": "pm2 start npm --name 'teanoto' -- start "
   }
 }
