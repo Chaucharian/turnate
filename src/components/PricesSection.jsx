@@ -85,7 +85,6 @@ const PricesSection = ({ id }) => {
                   <ul>
                     <li>Turnos por mes</li>
                     <li>Cant. de clientes</li>
-                    <li>Cant. de servicios</li>
                     <li>Sitio web .com</li>
                     <li>Acceso directo desde el dispositivo</li>
                     <li>Notificaciones automáticas</li>
@@ -101,10 +100,7 @@ const PricesSection = ({ id }) => {
                   <ul>
                     <li>100</li>
                     <li>Ilimitado</li>
-                    <li>5</li>
-                    <li>
-                      <DoneIcon />
-                    </li>
+                    <li></li>
                     <li>
                       <DoneIcon />
                     </li>
@@ -154,13 +150,12 @@ const PricesSection = ({ id }) => {
                   Pro
                 </Subtitle>
                 <AlignWp>
-                    <WpButton />
-                  </AlignWp>
+                  <WpButton />
+                </AlignWp>
                 <List>
                   <ul>
                     <li>Turnos por mes</li>
                     <li>Cant. de clientes</li>
-                    <li>Cant. de servicios</li>
                     <li>Sitio web .com</li>
                     <li>Acceso directo desde el dispositivo</li>
                     <li>Notificaciones automáticas</li>
@@ -176,7 +171,6 @@ const PricesSection = ({ id }) => {
                   <ul>
                     <li>300</li>
                     <li>Ilimitado</li>
-                    <li>15</li>
                     <li>
                       <DoneIcon />
                     </li>
@@ -233,13 +227,12 @@ const PricesSection = ({ id }) => {
                   Premium
                 </Subtitle>
                 <AlignWp>
-                    <WpButton />
-                  </AlignWp>
+                  <WpButton />
+                </AlignWp>
                 <List>
                   <ul>
                     <li>Turnos por mes</li>
                     <li>Cant. de clientes</li>
-                    <li>Cant. de servicios</li>
                     <li>Sitio web .com</li>
                     <li>Acceso directo desde el dispositivo</li>
                     <li>Notificaciones automáticas</li>
@@ -253,7 +246,6 @@ const PricesSection = ({ id }) => {
                     <li>Integraciones</li>
                   </ul>
                   <ul>
-                    <li>Ilimitado</li>
                     <li>Ilimitado</li>
                     <li>Ilimitado</li>
                     <li>
@@ -357,9 +349,7 @@ const PricesSection = ({ id }) => {
                     <ul>
                       <li>100</li>
                       <li>Ilimitado</li>
-                      <li>
-                        <DoneIcon />
-                      </li>
+                      <li></li>
                       <li>
                         <DoneIcon />
                       </li>

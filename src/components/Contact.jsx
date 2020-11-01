@@ -3,6 +3,7 @@ import styled from "styled-components";
 import EmailForm from "./EmailForm";
 import WpButton from "./WpButton";
 import Subtitle2 from "./Subtitle2";
+import { useQuery } from "react-query";
 
 const Content = styled.div`
   ${({}) => `
@@ -18,25 +19,22 @@ const Content = styled.div`
 `;
 
 const Contact = () => {
-  const [response, setResponse] = useState(null);
+  const [email, setEmail] = useState(null);
+  const { data: response } = useQuery(
+    ["email", email],
+    (key, email) =>
+      fetch(`/api/sendEmail?email=${email}`, {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }).then((response) => response.json()),
+    { enabled: email, refetchOnWindowFocus: false }
+  );
 
   const submit = ({ email }) => {
-    fetch("/api/sendEmail", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email }),
-    })
-      .then(async (response) => {
-        const normalize = await response.json();
-        setResponse(normalize);
-      })
-      .catch(async (error) => {
-        const normalize = await error.json();
-        setResponse(normalize);
-      });
+    setEmail(email);
   };
 
   useEffect(() => {

@@ -7,7 +7,7 @@ export default async (req, res) => {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ email: req.body.email }),
+    body: JSON.stringify({ email: req.query.email }),
   })
     .then(() => {
       res.statusCode = 200;
