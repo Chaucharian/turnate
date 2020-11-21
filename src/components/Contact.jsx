@@ -37,12 +37,6 @@ const Contact = () => {
     setEmail(email);
   };
 
-  useEffect(() => {
-    if (response !== null) {
-      window.scrollTo(0, document.body.scrollHeight);
-    }
-  }, [response]);
-
   return (
     <Content>
       <Subtitle2
